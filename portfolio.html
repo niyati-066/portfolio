@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Niyati Saini | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+background:#f4f6fb;
+color:#333;
+scroll-behavior:smooth;
+transition:0.4s;
+}
+
+/* DARK MODE */
+
+.dark{
+background:#111;
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#1b1b2f;
+color:white;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:500;
+}
+
+nav a:hover{
+color:#00e0ff;
+}
+
+/* HOME */
+
+#home{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#5f9cff,#7a5fff);
+color:white;
+}
+
+#home h1{
+font-size:50px;
+}
+
+#home p{
+margin-top:10px;
+font-size:18px;
+}
+
+/* SECTIONS */
+
+section{
+padding:80px 10%;
+}
+
+/* ABOUT */
+
+.about{
+max-width:700px;
+margin:auto;
+text-align:center;
+font-size:18px;
+}
+
+/* SKILLS */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.skill{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.dark .skill{
+background:#222;
+}
+
+.skill:hover{
+transform:translateY(-10px);
+}
+
+/* PROJECTS */
+
+.projects{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+margin-top:30px;
+}
+
+.project{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.dark .project{
+background:#222;
+}
+
+.project img{
+width:100%;
+border-radius:10px;
+margin-bottom:10px;
+}
+
+.project:hover{
+transform:scale(1.05);
+}
+
+/* EDUCATION */
+
+.education{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:40px;
+margin-top:40px;
+}
+
+.edu{
+width:200px;
+height:200px;
+border-radius:50%;
+background:white;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+padding:20px;
+}
+
+.dark .edu{
+background:#222;
+}
+
+.edu img{
+width:50px;
+margin-bottom:10px;
+}
+
+/* CONTACT */
+
+.contact{
+max-width:500px;
+margin:auto;
+}
+
+.contact input,
+.contact textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+.contact button{
+padding:12px;
+width:100%;
+background:#5f9cff;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:6px;
+}
+
+.links{
+margin-top:20px;
+text-align:center;
+}
+
+.links a{
+margin:0 10px;
+color:#5f9cff;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#1b1b2f;
+color:white;
+margin-top:40px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+#home h1{
+font-size:35px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+<h2>Niyati Saini</h2>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+<button onclick="toggleMode()">🌙</button>
+
+</nav>
+
+<!-- HOME -->
+
+<section id="home">
+
+<h1>Niyati Saini</h1>
+
+<p>Aspiring Developer | Data & AI Enthusiast</p>
+
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2 style="text-align:center;">About Me</h2>
+
+<div class="about">
+
+<p>
+I am Niyati Saini, a Computer Science student currently studying at COER University Roorkee. 
+I am passionate about programming, data analysis, and designing creative digital experiences using modern technologies.
+</p>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2 style="text-align:center;">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Python Programming</div>
+<div class="skill">Basics of SQL</div>
+<div class="skill">C++</div>
+<div class="skill">Java</div>
+<div class="skill">Operating Systems</div>
+<div class="skill">Power BI Dashboard Design</div>
+<div class="skill">Graphic Designing</div>
+<div class="skill">UI/UX Design</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2 style="text-align:center;">Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<img src="https://images.unsplash.com/photo-1581093458791-9d42f9c0b50b">
+
+<h3>AI Resume Screening System</h3>
+
+<p>
+An AI powered system that analyzes resumes and automatically shortlists candidates based on skills, qualifications and job requirements, helping recruiters speed up the hiring process.
+</p>
+
+<a href="#">Check on GitHub</a>
+
+</div>
+
+<div class="project">
+
+<h3>Personalized Learning Path Recommendation System</h3>
+
+<p>
+A system that analyzes student performance and learning behavior to recommend personalized study paths and resources, helping students improve their learning outcomes.
+</p>
+
+<a href="#">Check on GitHub</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+
+<section>
+
+<h2 style="text-align:center;">Education</h2>
+
+<div class="education">
+
+<div class="edu">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
+
+<h4>10th</h4>
+
+<p>Saraswati Vidhya Mandir</p>
+
+<p>CBSE (86%)</p>
+
+</div>
+
+<div class="edu">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
+
+<h4>12th</h4>
+
+<p>Saraswati Vidhya Mandir</p>
+
+<p>CBSE (82%)</p>
+
+</div>
+
+<div class="edu">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
+
+<h4>COER University</h4>
+
+<p>B.Tech CSE</p>
+
+<p>Currently Studying</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 style="text-align:center;">Contact Me</h2>
+
+<div class="contact">
+
+<form id="form">
+
+<input type="text" id="name" placeholder="Your Name">
+
+<input type="email" id="email" placeholder="Your Email">
+
+<textarea id="msg" rows="4" placeholder="Your Message"></textarea>
+
+<button type="submit">Send Message</button>
+
+<p id="error" style="color:red"></p>
+
+</form>
+
+<div class="links">
+
+<p>Email: saininiyati11@gmail.com</p>
+
+<p>Phone: 7017821934</p>
+
+<a href="https://www.linkedin.com/in/niyati-saini-b56021396">LinkedIn</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Niyati Saini | Portfolio</p>
+
+</footer>
+
+<script>
+
+document.getElementById("form").addEventListener("submit",function(e){
+
+let name=document.getElementById("name").value;
+let email=document.getElementById("email").value;
+let msg=document.getElementById("msg").value;
+
+let error=document.getElementById("error");
+
+if(name=="" || email=="" || msg==""){
+error.innerText="Please fill all fields";
+e.preventDefault();
+}
+
+});
+
+function toggleMode(){
+document.body.classList.toggle("dark");
+}
+
+</script>
+
+</body>
+</html>
